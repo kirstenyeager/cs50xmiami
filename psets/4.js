@@ -11,3 +11,24 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+
+function celsiusToFarenheit(celsius) {
+    return (celsius * 9 / 5) + 32;
+}
+
+function FarenheitToCelsius(farenheit) {
+    (farenheit - 32) * 5 / 9;
+}
+
+
+var celsius = 50;
+
+var farenheit1 = celsiusToFarenheit(celsius);
+
+console.log(celsius+ "degeesC is " +farenheit1+".");
+
+var farenheit2 = 100 ;
+
+var celsius2 = FarenheitToCelsius(farenheit2);
+
+console.log(farenheit2+ "degreesC is " +celsius2+".");

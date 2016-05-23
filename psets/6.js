@@ -29,4 +29,5 @@ function mixUp(a, b) {
 var str1 = "Hello";
 var str2 = "World!";
 
+
 console.log(mixUp(str1, str2));

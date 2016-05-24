@@ -14,21 +14,23 @@ fixStart('babble'): 'ba**le'
 function fixStart(s) {
   // write your solution here...
 // split apart the string into an array
-  var arr = s.split("");
-  var text = "b";
-  var i;
-  // replace each instance of the first character with *
-  for (i = 1; i < arr.length; i++) {
-    if (arr[i] === arr[0])
+  var x = s.charAt(0);
+  var string2 = x + "";
+  for (var i = 1; i < s.length; i++)
+  {
+    if (s.charAt(i) === x)
     {
-      arr[i] ="*";
+      string2 += "*";
     }
-      text += arr[i];
+    else {
+      string2 += s.charAt(i);
+    }
   }
-console.log(text);
+  return string2;
 
 }
 
 
 var s = "babble";
-fixStart(s);
+var final = fixStart(s);
+console.log(final);

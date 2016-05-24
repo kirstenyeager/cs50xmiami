@@ -16,6 +16,28 @@ For example:
 
 */
 
-function verbing(word) {
-  // write your solution here...
+function verbing(word)
+{
+  var x = word.length;
+  if (x > 2)
+  {
+    var wordEnding = (word.slice((x - 3), (x)));
+    if (wordEnding === "ing")
+    {
+      finalWord = word + "ly";
+    }
+    else
+      {
+        finalWord = word + "ing";
+      }
+    }
+    else if (x < 3)
+      {
+        finalWord = word;
+      }
+    return finalWord;
 }
+
+var word = "swimming";
+var newWord = verbing(word);
+console.log(newWord);

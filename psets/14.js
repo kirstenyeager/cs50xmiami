@@ -14,3 +14,18 @@ Create a function called fahrenheitToCelsius:
 */
 
 // write your solution here...
+// converting celsius to fahrenheit
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9 / 5) + 32;
+}
+// converting fahrenheit to celsius
+
+function FahrenheitToCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+}
+var fahrenheit2 = 100 ;
+var celsius = 50;
+
+console.log(celsius+ " degees celsius is " +celsiusToFahrenheit(celsius)+" fahrenheit.");
+
+console.log(fahrenheit2+ " degrees farenheit is " +FahrenheitToCelsius(fahrenheit2)+" degrees celsius.");

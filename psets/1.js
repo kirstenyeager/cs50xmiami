@@ -18,4 +18,4 @@ var age1 = (currentYear - birthYear);
 
 var age2 = (age1 - 1);
 
-console.log("They are either "+age1 "or "+age2 ".");
+console.log("They are either " + age1 + " or " + age2 + " years old.");

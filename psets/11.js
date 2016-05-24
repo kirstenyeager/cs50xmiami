@@ -12,3 +12,30 @@ Write a function named calculateAge that:
 */
 
 // write your solution here...
+
+function calculateAge (bYear)
+{
+  var d = new Date();
+  var n = d.getFullYear();
+  var age1 = (n - bYear);
+
+  return age1;
+
+}
+var birthYear = 1992;
+var age1 = calculateAge(birthYear);
+var age2 = (age1 - 1);
+
+console.log("They are either " + age2 + " or " + age1 + " years old.");
+
+var birthYear = 1945;
+var age1 = calculateAge(birthYear);
+var age2 = (age1 - 1);
+
+console.log("They are either " + age2 + " or " + age1 + " years old.");
+
+var birthYear = 1789;
+var age1 = calculateAge(birthYear);
+var age2 = (age1 - 1);
+
+console.log("They are either " + age2 + " or " + age1 + " years old.");

@@ -14,3 +14,19 @@ Create a function called calcArea:
 */
 
 // write your solution here...
+function calcCircumfrence (r) {
+
+  var circumference = 3 * 3.14 * r;
+  return circumference;
+
+}
+function calcArea (r) {
+    var area = 3.14 * radius * radius;
+    return area;
+}
+var radius = 5;
+var circumference = calcCircumfrence (radius);
+var area = calcArea(radius);
+
+console.log("The circumference is " + circumference + ".");
+console.log("The area is " + area + ".");

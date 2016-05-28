@@ -11,3 +11,27 @@ and log the result to make sure it works.
 */
 
 // write your solution here...
+function helloWorld (lang)
+{
+  if (lang === "es")
+  {
+    return "Hola, Mundo";
+  }
+  else if (lang ===  "de")
+  {
+    return "Hej, Verden";
+  }
+  else
+  {
+    return "Hello, World";
+  }
+}
+
+var greeting = helloWorld("en");
+console.log(greeting);
+
+var greeting = helloWorld("es");
+console.log(greeting);
+
+var greeting = helloWorld("de");
+console.log(greeting);

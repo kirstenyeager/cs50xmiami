@@ -10,3 +10,25 @@ and log the output to make sure it works (e.g. "The greater number of 5 and 10 i
 */
 
 // write your solution here...
+function greaterNum(a ,b) {
+  if (a < b)
+  {
+    return b;
+  }
+  else
+  {
+    return a;
+  }
+}
+
+var x = 1;
+var y = 1;
+for (var i = 0; i < 3; i++)
+{
+  var x = x * Math.random() * 10;
+  var y = y * Math.random() * 10;
+  var z = greaterNum(x, y);
+  console.log("The greater number of " + x + " and " + y + " is " + z + ".");
+
+
+}

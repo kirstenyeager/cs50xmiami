@@ -18,3 +18,16 @@ Never forget another recipe!
 */
 
 // write your solution here...
+// funtion recipe (Title, Serves, Ingredients) {
+//   this.Title = Title;
+//   this.Serves = Serves;
+//   this.Ingredients = Ingredients;
+// }
+
+var recipe =  {
+  Title:"Mole",
+  Serves: 2,
+  Ingredients:["rice", "beef", "cumin", "onions"]
+}
+
+console.log(recipe.Title  + "\nServes: " + recipe.Serves + "\nIngredients: \n" + recipe.Ingredients[1] +"\n" + recipe.Ingredients[2] +"\n" + recipe.Ingredients[3]);

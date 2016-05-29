@@ -23,12 +23,11 @@ function greaterNum(a ,b) {
 
 var x = 1;
 var y = 1;
+
 for (var i = 0; i < 3; i++)
 {
   var x = x * Math.random() * 10;
   var y = y * Math.random() * 10;
   var z = greaterNum(x, y);
   console.log("The greater number of " + x + " and " + y + " is " + z + ".");
-
-
 }

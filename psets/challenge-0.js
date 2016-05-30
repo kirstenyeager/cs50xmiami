@@ -25,6 +25,24 @@ Write a function that will take one argument (a number) and perform the followin
   - Calculate the area of a circle with the result of #2 as the radius.
   - Calculate what percentage that area is of the squared result (#3).
 */
-
-
 // write your solution here...
+function squareNumber (num){
+  console.log("The result of squaring the number " + num + " is " + num * num + ".");
+  return num * num;
+}
+var number = squareNumber(3);
+function areaOfCircle (radius) {
+  var area = 3.14 * radius * radius;
+  console.log("The area for a circle with radius " + radius + " is " + area);
+  return area;
+}
+var x = areaOfCircle(2);
+
+function half (numb){
+  var x = numb/2;
+  var y = squareNumber(x);
+  var z = areaOfCircle(y);
+  console.log("The answer is " + y/z*100 + "%.")
+}
+
+half(3);

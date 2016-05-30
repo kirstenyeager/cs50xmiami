@@ -17,3 +17,32 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+var bookArray = [];
+
+function book (title, author, read ) {
+  this.title = title;
+  this.author = author;
+  this.read = read
+}
+
+var theReader = new book("The End of the Affair", "Graham Greene", "yes");
+var harryPotter = new book("The Comedians", "Graham Greene", "no");
+var Leagues = new book("MacBeth", "William Shakespeare", "yes");
+var Birds = new book("The Birds", "Alfred Hitchcock", "no");
+
+bookArray.push (theReader);
+bookArray.push (harryPotter);
+bookArray.push (Leagues);
+bookArray.push (Birds);
+//
+for (var i = 0; i < bookArray.length; i++)
+{
+  if (bookArray[i].read === "yes")
+  {
+    console.log("You've read " + bookArray[i].title + " by " + bookArray[i].author + ".");
+  }
+  else
+    {
+      console.log("You need to read " + bookArray[i].title + " by " + bookArray[i].author + ".");
+    }
+}
